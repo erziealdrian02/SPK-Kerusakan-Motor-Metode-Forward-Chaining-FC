@@ -1,0 +1,569 @@
+/* Start Global Rules */
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+   min-height: 80px;
+   display: flex;
+}
+@media (max-width: 767px) {
+   .landing-page header {
+      min-height: auto;
+      display: initial;
+   }
+}
+.landing-page header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@media (max-width: 767px) {
+   .landing-page header .container {
+      flex-direction: column;
+      justify-content: center;
+   }
+}
+.landing-page header .logo {
+   color: #5d5d5d;
+   font-style: italic;
+   text-transform: uppercase;
+   font-size: 20px;
+}
+@media (max-width: 767px) {
+   .landing-page header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+}
+.landing-page header .links {
+   display: flex;
+   align-items: center;
+}
+@media (max-width: 767px) {
+   .landing-page header .links {
+      text-align: center;
+      gap: 10px;
+   }
+}
+.landing-page header .links li {
+   margin-left: 30px;
+   color: #5d5d5d;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.landing-page header .links li a {
+   color: #5d5d5d;
+}
+.landing-page header .links li a:hover {
+   cursor: pointer;
+   color: #6c63ff;
+}
+
+.landing-page header .links li:last-child a {
+   border-radius: 20px;
+   padding: 10px 20px;
+   color: #fff;
+   background-color: #6c63ff;
+   transition: all 0.3s ease;
+}
+
+.landing-page header .links li:last-child:hover a {
+   background-color: #312689;
+}
+
+@media (max-width: 767px) {
+   .landing-page header .links li {
+      margin-left: auto;
+   }
+}
+.landing-page header .links li a:not(:last-child):hover {
+   color: #6c63ff;
+}
+
+.landing-page .content .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 140px;
+   min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+   .landing-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+   }
+}
+@media (max-width: 767px) {
+   .landing-page .content .info {
+      text-align: center;
+      margin-bottom: 15px;
+   }
+}
+.landing-page .content .info h1 {
+   color: #5d5d5d;
+   font-size: 44px;
+}
+.landing-page .content .info h2 {
+   color: #5d5d5d;
+   font-size: 24px;
+}
+.landing-page .content .info p {
+   margin: 0;
+   line-height: 1.6;
+   font-size: 15px;
+   color: #5d5d5d;
+   text-align: justify;
+   padding-bottom: 30px;
+}
+.landing-page .content .info a {
+   border: 1px solid #ccc;
+   border-radius: 20px;
+   padding: 12px 30px;
+   margin-top: 30px;
+   cursor: pointer;
+   color: #fff;
+   background-color: #6c63ff;
+   transition: all 0.3s ease;
+}
+
+.landing-page .content .info a:hover {
+   cursor: pointer;
+   color: #fff;
+   background-color: #312689;
+}
+
+.landing-page .content .image img {
+   width: 450px;
+}
+.landing-page .content .wrapper {
+   text-align: center;
+   gap: 140px;
+   color: #5d5d5d;
+   min-height: calc(100vh - 80px);
+}
+.landing-page .content .wrapper .image img {
+   width: 450px;
+   border-radius: 30%;
+}
+/* End Landing Page */
+
+/* Start question-page */
+.question-page .content .container {
+   display: flex;
+   justify-content: center;
+   gap: 140px;
+   min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+   .question-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+   }
+}
+@media (max-width: 767px) {
+   .question-page .content .info {
+      text-align: center;
+
+      margin-bottom: 15px;
+   }
+}
+.question-page .content .info h1 {
+   color: #5d5d5d;
+   font-size: 44px;
+   text-align: center;
+}
+.question-page .content .info h2 {
+   color: #5d5d5d;
+   font-size: 24px;
+   text-align: center;
+}
+.question-page .content .info p {
+   margin: 0;
+   line-height: 1.6;
+   font-size: 22px;
+   color: #5d5d5d;
+   text-align: justify;
+   padding-bottom: 30px;
+   text-align: center;
+}
+.question-page .content .info a {
+   border: 1px solid #ccc;
+   border-radius: 20px;
+   padding: 12px 30px;
+   margin: 30px;
+   cursor: pointer;
+   color: #fff;
+   background-color: #6c63ff;
+   transition: all 0.3s ease;
+   width: 200px;
+   text-align: center;
+}
+
+.question-page .content .info a:hover {
+   cursor: pointer;
+   color: #fff;
+   background-color: #312689;
+}
+.question-button {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+/* End question-page */
+
+/* Start diagnose-page */
+.diagnose-page .content .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   min-height: calc(100vh - 80px);
+}
+
+.diagnose-page .content .info h1 {
+   color: #5d5d5d;
+   font-size: 44px;
+   text-align: center;
+   margin: 1px;
+}
+
+/* CSS untuk elemen action-button */
+.action-button {
+   display: flex;
+   justify-content: center;
+   gap: 10px; /* Jarak antara tombol */
+   margin-top: 20px; /* Jarak dari elemen di atasnya */
+}
+
+.action-button a {
+   display: inline-block;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   color: white;
+   background-color: #6c63ff;
+   border: none;
+   border-radius: 20px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button a:hover {
+   background-color: #534bff;
+   transform: scale(1.05); /* Efek membesar */
+}
+
+.action-button a:active {
+   background-color: #312689;
+   transform: scale(0.95); /* Efek mengecil */
+}
+
+@media (max-width: 767px) {
+   .action-button {
+      flex-direction: column;
+   }
+
+   .action-button a {
+      width: 100%; /* Lebar penuh pada perangkat kecil */
+      margin-bottom: 10px; /* Jarak bawah antar tombol */
+   }
+}
+
+.diagnose-page .action-button a {
+   border: 1px solid #ccc;
+   border-radius: 20px;
+   padding: 12px 30px;
+   margin: 30px;
+   cursor: pointer;
+   color: #fff;
+   background-color: #6c63ff;
+   transition: all 0.3s ease;
+   width: 200px;
+   text-align: center;
+}
+
+.table-container {
+   width: 100%; /* Tabel mengisi lebar penuh */
+   margin-top: 20px;
+   overflow-x: auto;
+}
+
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+
+.table th {
+   background-color: #f2f2f2;
+   color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+   background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+   background-color: #f1f1f1;
+}
+
+/* End diagnose-page */
+
+/* Modal */
+.modal-window {
+   position: fixed;
+   background-color: rgb(0 0 0 / 60%);
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 999;
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s;
+}
+.modal-window:target {
+   visibility: visible;
+   opacity: 1;
+   pointer-events: auto;
+}
+.modal-window > div {
+   width: 700px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 2em;
+   background: #ffff;
+}
+.modal-window header {
+   font-weight: bold;
+}
+.modal-window h1 {
+   font-size: 150%;
+   margin: 0 0 15px;
+   color: #5d5d5d;
+   text-align: center;
+}
+
+.modal-close {
+   color: #aaa;
+   line-height: 50px;
+   font-size: 80%;
+   position: absolute;
+   right: 0;
+   text-align: center;
+   top: 0;
+   width: 70px;
+   text-decoration: none;
+}
+.modal-close:hover {
+   color: black;
+}
+
+.modal-window > div {
+   border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+   margin-bottom: 15px;
+}
+/* Gaya umum untuk semua input, label, dan select dalam form */
+.modal-window form div {
+   margin-bottom: 15px;
+}
+
+.modal-window form label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+   color: #5d5d5d;
+}
+
+.modal-window form input[type="text"],
+.modal-window form input[type="tel"],
+.modal-window form input[type="email"],
+.modal-window form input[type="password"],
+.modal-window form select,
+.modal-window form textarea {
+   width: calc(100% - 22px);
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 1em;
+   box-sizing: border-box;
+}
+
+.modal-window form button[type="submit"] {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 20px;
+   background-color: #6c63ff;
+   color: #fff;
+   font-size: 1.2em;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.modal-window form button[type="submit"]:hover {
+   background-color: #312689;
+}
+
+/* Gaya untuk input dengan pesan kesalahan */
+.modal-window form input:invalid,
+.modal-window form select:invalid {
+   border-color: #6c63ff;
+   transition: all 0.3s ease;
+}
+
+/* Menyesuaikan ukuran input, select, dan label untuk perangkat kecil */
+@media (max-width: 600px) {
+   .modal-window form div {
+      margin-bottom: 10px;
+   }
+
+   .modal-window form label {
+      margin-bottom: 3px;
+   }
+
+   .modal-window form input[type="text"],
+   .modal-window form input[type="tel"],
+   .modal-window form input[type="email"],
+   .modal-window form select,
+   .modal-window form textarea {
+      width: calc(100% - 12px);
+      padding: 8px;
+      font-size: 0.9em;
+   }
+
+   .modal-window form button[type="submit"] {
+      padding: 10px;
+      font-size: 1em;
+   }
+}
+/* End Modal */
+
+/* Footer */
+/* Footer style */
+.footer {
+   background-color: #333;
+   color: #fff;
+   padding: 40px 0;
+   font-size: 0.9em;
+}
+
+.footer .container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.footer .footer-content {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.footer .footer-section {
+   flex: 1;
+   min-width: 250px;
+   margin-bottom: 20px;
+}
+
+.footer .footer-section h2 {
+   font-size: 1.5em;
+   margin-bottom: 10px;
+}
+
+.footer .footer-section p,
+.footer .footer-section ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.footer .footer-section ul li {
+   margin-bottom: 10px;
+}
+
+.footer .footer-section ul li a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.footer .footer-section ul li a:hover {
+   color: #6c63ff;
+}
+
+.footer .footer-bottom {
+   text-align: center;
+   padding: 20px 0;
+   border-top: 1px solid #555;
+   margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+   .footer .container {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .footer .footer-section {
+      margin-bottom: 30px;
+   }
+}
+
+/* EndFoter */
